@@ -1,0 +1,20 @@
+a {
+    position: relative;
+    color: red;
+    text-decoration: none;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+a:hover::before {
+    width: 100%;
+}
